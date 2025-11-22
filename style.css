@@ -468,24 +468,39 @@ body {
     height: 125px;
   }
 }
-@media (max-width: 600px) {
-  .content-wrapper,
-  .soft-card,
-  .hero-card,
-  .main-card {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
+/* 🔥 Full mobile centering fix */
+@media (max-width: 768px) {
   body {
-    text-align: center;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
   }
 
-  * {
-    max-width: 100vw;
+  .hero-card,
+  .soft-card,
+  .main-card,
+  .content-wrapper,
+  .text-card {
+    width: 92% !important;       /* fits screen */
+    max-width: 92% !important;
+    margin-left: auto !important; /* centers */
+    margin-right: auto !important; /* centers */
+    box-sizing: border-box;
+  }
+
+  .romantic-heading {
+    text-align: center;
+  }
+
+  .subtitle,
+  .person-message,
+  p,
+  h2,
+  h3 {
+    text-align: center !important;
   }
 }
+
 
 
 
@@ -514,6 +529,7 @@ body {
   55%  { transform: scale(1.07); }
   100% { transform: scale(1); }
 }
+
 
 
 
