@@ -466,6 +466,25 @@ body {
     height: 125px;
   }
 }
+@media (max-width: 600px) {
+  .content-wrapper,
+  .soft-card,
+  .hero-card,
+  .main-card {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body {
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  * {
+    max-width: 100vw;
+  }
+}
+
 
 
 /* Big Melting Heart — correct shape and position */
@@ -493,6 +512,7 @@ body {
   55%  { transform: scale(1.07); }
   100% { transform: scale(1); }
 }
+
 
 
 
