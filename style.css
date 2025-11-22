@@ -502,19 +502,17 @@ body {
 }
 /* Fix mobile layout — prevent wide text from shifting page */
 @media (max-width: 768px) {
-  .script-name {
+  .line .script-name {
     display: block;
-    font-size: 32px !important;      /* reduce size so it fits */
-    white-space: normal !important;  /* allow text to wrap */
+    font-size: 30px !important;
+    white-space: normal !important;
     text-align: center !important;
-    line-height: 1.2;
-    margin-top: 10px;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    line-height: 1.25;
+    margin: 10px auto 0 auto;
   }
 
   html, body {
-    overflow-x: hidden !important; /* stop sideways scrolling */
+    overflow-x: hidden !important;
   }
 }
 
@@ -547,6 +545,7 @@ body {
   55%  { transform: scale(1.07); }
   100% { transform: scale(1); }
 }
+
 
 
 
