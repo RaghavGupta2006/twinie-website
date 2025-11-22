@@ -98,6 +98,8 @@ body {
   background: var(--card);
   border-radius: 24px;
   padding: 26px 22px 26px;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow:
     0 20px 38px rgba(94, 66, 110, 0.15),
     0 0 0 1px rgba(255, 255, 255, 0.9);
@@ -512,6 +514,7 @@ body {
   55%  { transform: scale(1.07); }
   100% { transform: scale(1); }
 }
+
 
 
 
